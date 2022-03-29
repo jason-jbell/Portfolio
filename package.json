@@ -1,0 +1,39 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack",
+    "build:dev": "npm run build -- -- watch --mode=development",
+    "seed": "node scripts/seed.js",
+    "start:dev": "nodemon src/server --ignore dist/ --ignore src/client & npm run build:dev"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.4",
+    "css-loader": "^6.7.1",
+    "nodemon": "^2.0.15",
+    "style-loader": "^3.3.1",
+    "volleyball": "^1.5.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jason-jbell/Portfolio.git"
+  },
+  "author": "Jason Bell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jason-jbell/Portfolio/issues"
+  },
+  "homepage": "https://github.com/jason-jbell/Portfolio#readme"
+}
