@@ -10,6 +10,9 @@
     "start:dev": "nodemon src/server --ignore dist/ --ignore src/client & npm run build:dev"
   },
   "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.5.3",
     "express": "^4.17.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
