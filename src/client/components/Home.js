@@ -1,8 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <h1>BIG HOME</h1>
+    <div>
+      <h1>BIG HOME</h1>
+      <Link to={'/test'}>TESAT</Link>
+    </div>
   )
 }
 
