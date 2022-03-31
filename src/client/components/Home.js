@@ -37,7 +37,7 @@ const Home = () => {
       <h1>BIG HOME</h1>
       <Link to={'/test'}>TESAT</Link>
       <Button variant='contained' onClick={testy}>CHECK ME OUT</Button>
-      <Typography variant="h5" align="center" color="red" paragraph>
+      <Typography variant="h5" align="center" color="blue" paragraph>
         Something short and leading about the collection below
       </Typography>
       <ThemeProvider theme={theme}>
