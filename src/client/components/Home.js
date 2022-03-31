@@ -22,10 +22,12 @@ const testy = () => {
 const theme = createTheme()
 const cards = [
   {
-    content: 'this is the first card'
+    content: 'this is the first card',
+    img: 'https://images.unsplash.com/photo-1624383784228-36505c940b3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zm9ybXVsYSUyMDF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
   },
   {
-    content: 'this is the second card'
+    content: 'this is the second card',
+    img: 'https://images.unsplash.com/photo-1537402792645-b6d9a3ac3fad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9ybXVsYSUyMDF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
   }
 ]
 
@@ -96,7 +98,7 @@ const Home = () => {
                       // 16:9
                       pt: '56.25%',
                     }}
-                    image="https://source.unsplash.com/random"
+                    image={card.img}
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
