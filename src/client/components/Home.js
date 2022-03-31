@@ -23,7 +23,7 @@ const theme = createTheme()
 const cards = [
   {
     content: 'this is the first card',
-    img: 'https://images.unsplash.com/photo-1624383784228-36505c940b3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zm9ybXVsYSUyMDF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
+    img: 'https://images.unsplash.com/photo-1574785525103-c35dd9b6bb91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Zm9ybXVsYSUyMDF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
   },
   {
     content: 'this is the second card',
