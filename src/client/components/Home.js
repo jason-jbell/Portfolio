@@ -20,7 +20,14 @@ const testy = () => {
 }
 
 const theme = createTheme()
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const cards = [
+  {
+    content: 'this is the first card'
+  },
+  {
+    content: 'this is the second card'
+  }
+]
 
 const Home = () => {
   return (
@@ -79,7 +86,7 @@ const Home = () => {
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={cards.indexOf(card)} xs={12} sm={6} md={4}>
                 <Card
                   sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
@@ -97,8 +104,7 @@ const Home = () => {
                       Heading
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
+                      {card.content}
                     </Typography>
                   </CardContent>
                   <CardActions>
