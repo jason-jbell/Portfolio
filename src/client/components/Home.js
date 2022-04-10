@@ -22,31 +22,32 @@ const testy = () => {
 const theme = createTheme()
 const cards = [
   {
+    id: 1,
     content: 'this is the first card',
     img: 'https://images.unsplash.com/photo-1574785525103-c35dd9b6bb91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Zm9ybXVsYSUyMDF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
   },
   {
+    id: 2,
     content: 'this is the second card',
     img: 'https://images.unsplash.com/photo-1537402792645-b6d9a3ac3fad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9ybXVsYSUyMDF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
   }
 ]
 
 const Home = () => {
+  const handleViewProject = (card) => {
+
+  }
+
+
   return (
     <div>
-      <h1>BIG HOME</h1>
-      <Link to={'/test'}>TESAT</Link>
-      <Button variant='contained' onClick={testy}>CHECK ME OUT</Button>
-      <Typography variant="h5" align="center" color="blue" paragraph>
-        Something short and leading about the collection below
-      </Typography>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <AppBar position='relative'>
           <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            Album layout
-          </Typography>
+            <Typography variant="h6" color="inherit" noWrap>
+              Projects
+            </Typography>
           </Toolbar>
         </AppBar>
         <main>
@@ -66,12 +67,10 @@ const Home = () => {
               color="text.primary"
               gutterBottom
             >
-              Album layout
+              Projects
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Something short and leading about the collection below—its contents,
-              the creator, etc. Make it short and sweet, but not too short so folks
-              don&apos;t simply skip over it entirely.
+              These are a few of the larger projects I have completed. Click "view" to learn more about a specific one.
             </Typography>
             <Stack
               sx={{ pt: 4 }}
@@ -110,8 +109,13 @@ const Home = () => {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
+                    <Button onClick={() => {
+                      handleViewProject(card)
+                      }}
+                      size="small"
+                    >
+                      View
+                    </Button>
                   </CardActions>
                 </Card>
               </Grid>
